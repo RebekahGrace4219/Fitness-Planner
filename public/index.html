@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Fitness Log</title>
+	<link href="css/reset.css" rel="stylesheet" type="text/css" />
+	<link href="css/theme.css" rel="stylesheet" type="text/css" />
+	<link href="css/layout.css" rel="stylesheet" type="text/css" />
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,700;1,800&display=swap"
+	 rel="stylesheet">
+
+	<link rel="stylesheet" href="./css/barchart.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+	<script src="https://d3js.org/d3.v6.min.js"></script>
+   <script defer src="js/barchart.js"></script>
+	<script defer src="js/examples.js"></script>
+ 
+
+</head>
+
+<BODY>
+	<div id="banner">
+		<h1 id="bannerTitle">Fitness Log</h1>
+	</div>
+	<div id="content">
+		<div id="welcomeBox">
+			<div id="greetingWrap">
+				<h1 id="greeting">Welcome back,<br>Joey!</h1>
+      </div>
+      <div id=questionWrap>
+      <p id="question"> What activity session are you logging? </p>
+      </div>
+      <div class="imageWrap">
+        <img src="header image.png">
+      </div>
+    </div>
+
+    <div id = "reminderBox">
+      <div id = "reminderDiv">Reminder</div>
+      <div id = "whiteReminderBox">
+        <div>
+          <div id = "questionDiv">Did you <span id = "questionSpan"></span>?</div>
+        </div>
+        <div id = "buttonReminderBox">
+          <div id = "yesButtonDiv"><button id = "yesButton" class="reminderButton">Yes</button></div>
+          <div id ="noButtonDiv"><button id = "noButton" class = "reminderButton">No</button></div>
+        </div>
+      </div>
+    </div>
+
+
+   
+    <h2 id = "pastActivityHeader">Past Activity<div id = "viewProgressDiv"><button id = "viewProgress">View Progress</button></div></h2>
+    
+        <div class="pastActivity">
+          <div id = "thirdScreen">
+      <p id = "pastText">Got it! <span id = "pastSpan"></span>. Keep it up!<br></p>
+      <button class= "addNewActivityButton" id = "pastActivityAddNew">
+        Add New Activity
+      </button>
+      </div>
+      <div class = "pastInputInfo" id = "pastActivityDateDiv">
+        <label for="pastActivityDate">Date:</label>
+        <input class = "dateInput" type="date" id="pastActivityDate" />
+      </div>
+
+      <div class = "pastInputInfo" id = "selectDiv">
+        <label for="pastActivityChoice">Activity:</label>
+        <div>
+        <select class = "activityChoice" id="pastActivityChoice" name="activity" value="Walk">
+          <option value="Walk" selected>Walk</option>
+          <option value="Run">Run</option>
+          <option value="Swim">Swim</option>
+          <option value="Bike">Bike</option>
+          <option value="Yoga">Yoga</option>
+          <option value="Soccer">Soccer</option>
+          <option value="Basketball">Basketball</option>
+        </select>
+        </div>
+  
+      </div>
+
+      <div class = "pastInputInfo" id = "pastForDiv">
+        <br>
+        <div id = "forText">
+        for
+        </div>
+      </div>
+
+      <div class = "pastInputInfo" id = "pastNumberDiv">
+        <label for="pastActivityNumber">Time/Distance</label>
+        <input id="pastActivityNumber" type="number" />
+      </div>
+
+      <div class = "pastInputInfo" id = "pastUnitsDiv">
+        <label for="pastActivityUnits">Units</label>
+        <input id="pastActivityUnits" type="text" placeholder = "km" disabled="disabled" />
+      </div>
+      <div class= "pastInputInfo" class = "buttonWrapper" id = "pastSubmitDiv">
+        <label for = "pastActivityButton"><br></label>
+        <button class = "submitButton" id="pastActivityButton">
+          Submit
+        </button>
+      </div>
+    </div>
+  <h2>Future Plans</h2>
+    <div class="futureActivity">
+      
+      <div id = "addNewFutureStuff">
+      <p id = "textFuture">Sounds good! Don't forget to come back to update your session for <span id="futureUserInput"></span>!</p>
+      <button class = "addNewActivityButton" id = "futureActivityAddNew">
+        Add New Activity
+      </button>
+      </div>
+
+      <div class = "futureInputInfo" id = "futureDateDiv">
+      <label for="futureActivityDate">Date:</label>
+      <input class= "dateInput" type="date" id="futureActivityDate" />
+      </div>
+      
+      <div class = "futureInputInfo" id = "futureChoiceDiv">
+        <label for="futureActivityChoice">Activity:</label>
+        <div>
+          <select class = "activityChoice" id="futureActivityChoice">
+          <option value="Walk">Walk</option>
+          <option value="Run">Run</option>
+          <option value="Swim">Swim</option>
+          <option value="Bike">Bike</option>
+          <option value="Yoga">Yoga</option>
+          <option value="Soccer">Soccer</option>
+          <option value="Basketball">Basketball</option>
+          </select>
+        </div>
+      </div>
+
+      <div id = "futureSubmitDiv" class = "futureInputInfo" class = "buttonWrapper">
+        <label for= "futureActivityButton"> <br></label>
+        <button  class = "submitButton" id="futureActivityButton">
+          Submit
+        </button>
+      </div>
+
+    </div>
+  </div>
+  <div id="popupWrapper">
+    <div id = "poppup">
+      <div id = "closeB">
+        <button id = "closeButton">x</button>
+      </div>
+      <div id = "labelBox"> 
+        <div id = "textDiv">
+          <div id = "viewText">
+            View activity for: 
+          </div>
+          <div id = "selectDiv">
+            <select class = "activityChoice" id = "selectChart">
+              <option value="Walk">Walk</option>
+              <option value="Run">Run</option>
+              <option value="Swim">Swim</option>
+              <option value="Bike">Bike</option>
+              <option value="Yoga">Yoga</option>
+              <option value="Soccer">Soccer</option>
+              <option value="Basketball">Basketball</option>
+            </select>
+          </div>
+        </div>
+        <div id = "weekDiv">
+          <div id = "weekText">
+            Week Ending: 
+          </div>
+          <div id = "dateDiv">
+            <input type = "date" id = "chartDate"/>
+          </div>
+        </div>
+          <div id = "goButtonDiv">
+            <button id = "goButton">Go</button>
+          </div>
+      </div>
+      <div id = "chartHandler">
+        <div id = "chart"></div>
+      </div>
+    </div>
+  </div>
+</BODY>
+</html>

@@ -1,0 +1,26 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #F2F2F2
+} 
+
+h1 {
+  font-size: xx-large;
+  font-weight: bolder;
+}
+
+#banner {
+  background-color: #333333;
+  color: #FFF;
+}
+
+#reminderBox{
+  background-color: #5267D9;
+
+}
+.reminderButton{
+  background-color: #5267D9;
+  color: white;
+  text-decoration: underline;
+  
+}
+

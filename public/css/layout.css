@@ -1,0 +1,521 @@
+/* Banner and Greeting */
+#banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#bannerTitle {
+  padding-left: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#greeting {
+  padding-top: 25px;
+  font-weight: 700;
+  font-size: 42px;
+}
+
+#question {
+  /* change to 20px */
+  font-size: 25px;
+  font-weight: 400;
+
+}
+
+#greetingWrap {
+  display: flex;
+  flex-wrap: wrap;
+  /* change to flex-start */
+  align-items: center;
+  justify-content: center;
+  height: 66%;
+}
+
+#questionWrap {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  height: 30%;
+  padding: 3px;
+  width: 50%;
+}
+
+
+/* Welcome Box */
+#welcomeBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  height: 290px;
+  width: 90%;
+  padding: 1%;
+}
+
+/* Image */
+.imageWrap {
+  display: flex;
+  max-height: 100%;
+  max-width: 50%;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Mobile view */
+@media(min-width: 1250px) {
+  #content {
+    max-width: 1390px;
+    margin:0 auto;
+  }
+}
+
+@media(max-width: 640px) {
+
+  h1 {
+    font-size: 25px;
+  }
+  
+  .imageWrap {
+    order: 1;
+    align-self: flex-end;
+  }
+  #questionWrap {
+    order: 2;
+    align-self: center;
+    width: 100%;
+  }
+  #question {
+    width: 100%;
+    font-size: 16px;
+  }
+  #greetingWrap {
+    order: 0;
+    align-self: center;
+    width: 100%;
+  }
+  #greeting{
+    width: 100%;
+  }
+  #imageWrapper {
+    width: 50%
+  }
+
+  #welcomeBox {
+    height: auto;
+  }
+}
+
+input {
+  border: none;
+  display: block;
+  font-size: 16px;
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 100%;
+}
+
+h2 {
+  font-weight: bold;
+  width: 90%;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-size: 20px;
+
+}
+
+/* Acitivity Boxes */
+.pastActivity{
+  background-color: #53E0CD;
+  padding-left: 3px;
+  padding-right: 3px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  border-radius: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+  width: 90%;
+  margin-bottom: 2%;
+}
+label {
+  font-weight: bold;
+}
+.futureActivity{
+  background-color: #B1BAB9;
+  padding-left: 3px;
+  padding-right: 3px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  border-radius: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+  width: 90%;
+}
+
+.activityChoice{
+  border: none;
+  width: 100pt;
+  height: 25pt;
+  padding: 5px;
+}
+
+.addNewActivityButton {
+  border-radius: 25pt;
+  height: 30pt;
+  width: 125pt;
+  border: 1px;
+  box-shadow: 1px 2px 5px  lightslategray;
+  align-self: center;
+  justify-self: center;
+  font-weight: bold;
+  margin: 0 auto;
+}
+
+#pastActivityAddNew {
+  justify-self: center;
+  align-self: center;
+}
+#pastActivityNumber{
+  width: 130px;
+}
+#pastActivityUnits{
+  background-color: #FFF;
+  width: 100px;
+  color: black;
+}
+
+.dateInput {
+  width: 150px;
+}
+
+.submitButton{
+  width: 92pt;
+  height: 25pt;
+  border-radius: 20pt;
+  background-color:#333333;
+  color: #FFF;
+  border: none;
+  font-weight:400;
+}
+
+#forText{
+  padding-top: 25%;
+  font-weight: bold;
+}
+
+.pastInputInfo{
+  display: none;
+}
+
+.futureInputInfo{
+  display: none;
+}
+
+#textFuture{
+  display:none;
+  align-self: center;
+  justify-self: center;
+  padding-bottom:15px;
+}
+
+#addNewFutureStuff{
+  align-self: center;
+  justify-self: center;
+}
+
+#futureUserInput {
+  font-weight: bold;
+}
+
+#pastText{
+  display: none;
+  align-self: center;
+  padding-bottom: 15px;
+}
+
+#pastSpan{
+  font-weight: bold;
+}
+
+#thirdScreen {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+}
+
+#addNewFutureStuff {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+
+}
+#pastActivityDateDiv, #selectDiv, #pastForDiv, #pastNumberDiv, #pastUnitsDiv, #pastSubmitDiv {
+  padding: 15px;
+}
+
+#futureDateDiv, #futureChoiceDiv, #futureSubmitDiv {
+  padding: 20px;
+}
+
+
+/* Remind Boxes */
+#reminderBox{
+  padding-left: 3px;
+  padding-right: 3px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: none;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 90%;
+}
+
+#reminderDiv{
+  font-size:1.5em;
+  font-weight: 800;
+  font-style: italic;
+}
+
+#questionDiv, #yesButtonDiv, #noButtonDiv{
+  font-weight: 700;
+  font-size:1.25em;
+  color:white;
+}
+
+
+#reminderDiv, #questionDiv, #yesButtonDiv, #noButtonDiv {
+  margin-left: 20px;
+  margin-right:20px;
+}
+
+
+#viewProgress{
+  width: 100pt;
+  height: 30pt;
+  border-radius: 20pt;
+  background-color:#333333;
+  color: #FFF;
+  border: none;
+  font-weight:600;
+  font-size: 0.7em;
+  box-shadow: 1px 2px 5px  grey;
+}
+
+#viewProgressDiv{
+  display: inline;
+  padding-left: 40px;
+}
+
+#whiteReminderBox{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  max-width: 90vw;
+}
+
+
+#yesButtonDiv, #noButtonDiv{
+  display: inline;
+}
+
+/* Pop Up */
+#popupWrapper {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: fixed;
+  top: 0;
+  right:0;
+  bottom:0;
+  left: 0;
+  background-color: rgba(0 ,0 ,0, .8);
+  display:none;
+}
+
+#labelBox{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-around;
+  max-width: 90%;
+  padding-left: 5%;
+  padding-right:5%;
+}
+  
+#poppup{
+  background-color: #F2F2F2;
+  margin-left: 10vw;
+  margin-top: 10vh;
+  width: 80vw;
+  height: 80vh;
+}
+
+#viewText, #weekText{
+  font-weight: 600;
+  font-size: 20px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+#closeB{
+  display:flex;
+  flex-direction:row-reverse;
+  width: 80vw;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+#closeButton{
+  padding-right: 25px;
+  padding-top: 5px;
+}
+
+#goButtonDiv{
+  align-self: baseline;
+  padding-top:20px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+#goButton{
+  width: 80pt;
+  height: 25pt;
+  border-radius: 20pt;
+  background-color:#333333;
+  color: #FFF;
+  border: none;
+  font-weight:600;
+  font-size: 1em;
+  box-shadow: 1px 2px 5px  grey;
+  padding-left: 25px;
+  padding-right: 25px;
+  align-self: center;
+}
+
+#textDiv{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  padding-top:10px;
+  padding-bottom:10px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#weekDiv{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  padding-top:10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom:10px;
+}
+
+#selectDiv, #dateDiv {
+  padding-left: 25px;
+}
+
+#labelBox{
+  max-width: 75vw;
+}
+
+/* Mobile View */
+@media(max-width: 700px){
+  /*Change the label Id when the list goes down in length*/
+  #selectDiv, #dateDiv {
+    max-width:95vw;
+    padding-left:0px;
+    padding-right:0px;
+  }
+  #textDiv{
+    justify-content: center;
+  }
+  #weekDiv, #textDiv,#buttonDiv{
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom:0px;
+    margin: 0 auto;
+  }
+  #selectDiv{
+    margin: 0 auto;
+    padding-top:5px;
+    padding-bottom: 5px;
+  }
+  #weekText, #viewText, #activityChoice{
+    height: 15px;
+    font-size: 80%;
+    padding-top:10px;
+    font-weight: 700;
+  }
+  #selectChart{
+    height:30px;
+  }
+  #chartDate{
+    padding-bottom: 5px;
+    margin: 0 auto;
+    height: 20px;
+  }
+  
+  #goButtonDiv{
+    height: 30px;
+    padding-top:5px;
+    padding-bottom: 5px;
+  }
+  #goButton{
+    height:30px;
+    margin: 0 auto;
+    padding: 0, 0, 0, 0;
+    font-size: 80%;
+  }
+
+  #textDiv, #weekDiv{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 79vw;
+  }
+  #weekText, #viewText, #input{
+    justify-content:center;
+  }
+
+  
+}
+
+#chart{
+  width: 90%;
+  max-width: 700px;
+
+  padding-bottom: 5%;
+  padding-top: 3%;
+}
+
+#chartHandler{
+  display:flex;
+  justify-content: center;
+  height:100%;
+}
+
+
