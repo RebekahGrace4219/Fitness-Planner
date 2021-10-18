@@ -1,5 +1,5 @@
 Rebekah Grace 
-Howard Wang (Possibly Written "Jhao Hua") 
+"Jhao Hua" Howard Wang  
 
 # Fitness-Planner: Welcome to my First Full Web App Ever!
 
