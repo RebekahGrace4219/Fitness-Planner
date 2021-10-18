@@ -5,7 +5,7 @@ Howard Wang (Possibly Written "Jhao Hua")
 
 ## Usage
 - People can enter the physical activity that they have already completed. They can also add plans for future activity. The app prevents people from entering planned dates in the past, or finished activity into the future. The user can also see progress bars that include their finished activities over time.  Last, a reminder box pops up when the app is entered, asking the user if they finished their most recently planned item.
--
+
 ## Skills Developed
 - Teamwork: Built this program in a team of two, which required communication. Additionally, it helped us both discover who was better at what, allowing us to hone our skills more.
 - CSS, HTML: This was my first foray into HTML and CSS, at all.
