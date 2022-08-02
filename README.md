@@ -3,7 +3,7 @@ Rebekah Grace
 
 # Fitness-Planner
 ## Usage
-People can enter the physical activity that they have already completed. They can also add plans for future activity. The app prevents people from entering planned dates in the past, or finished activity into the future. The user can also a bar chart that includes their finished activities over time.  Last, a reminder box pops up when the app is entered, asking the user if they finished their most recently workout. You can see it [here]().
+People can enter the physical activity that they have already completed. They can also add plans for future activity. The app prevents people from entering planned dates in the past, or finished activity into the future. The user can also a bar chart that includes their finished activities over time.  Last, a reminder box pops up when the app is entered, asking the user if they finished their most recently workout. 
 
 ## Skills Developed
 - Teamwork: Built this program in a team of two, which required communication. Additionally, it helped us both discover who was better at what, allowing us to hone our skills more.
