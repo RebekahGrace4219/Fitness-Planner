@@ -1,6 +1,5 @@
 # Creators
-Rebekah Grace 
-"Jhao Hua" Howard Wang  
+Rebekah Grace and "Jhao Hua" Howard Wang  
 
 # Fitness-Planner
 ## Usage
